@@ -5,7 +5,8 @@ def input_parameters(parameter_names):
     result = {}
 
     # Соотношение матрица-наполнитель - выходной параметер, пропускаем
-    parameter_names.pop('Соотношение матрица-наполнитель')
+    if 'Соотношение матрица-наполнитель' in parameter_names:
+        parameter_names.pop('Соотношение матрица-наполнитель')
 
     for key, value in parameter_names.items():
         while True:
