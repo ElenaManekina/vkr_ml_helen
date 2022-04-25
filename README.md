@@ -19,3 +19,15 @@ pip install flask
 pip freeze > requirements.txt
 ```
 6. С помощью GitHub Desktop создаем репозиторий и публикуем его на Github (выбираем "публичный")
+---
+
+### Запуск консольного приложения:
+```commandline
+python .\console_app.py
+```
+
+### Запуск flask приложения: 
+> параметрами можно передавать интерфейс и порт
+```commandline
+python .\flask_app.py 0.0.0.0 8000
+```
