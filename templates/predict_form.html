@@ -1,0 +1,21 @@
+<!doctype html>
+<title>Parameter input form</title>
+<h2>Прогнозирование выходного параметра "Соотношение матрица-наполнитель"</h2>
+
+<form action="" method="post" novalidate>
+    <table>
+        <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+        </tr>
+        {% for param in parameters %}
+        <tr>
+            <td><label for="{{ param.id }}">{{ param.title }}</label></td>
+            <td><input name="{{ param.id }}" id="{{ param.id }}" value="{{ param.default_value }}"></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+        <button>Отправить</button>
+    </p>
+</form>
